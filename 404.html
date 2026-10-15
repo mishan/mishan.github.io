@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Not found</title>
+<script>
+  // The autolivery demo was published as autolivery-demo before the repository
+  // was renamed, and links to its pages are out there.
+  var old = '/autolivery-demo/';
+  var path = location.pathname;
+  if (path === '/autolivery-demo' || path.indexOf(old) === 0) {
+    location.replace('/autolivery/' + path.slice(old.length) + location.search + location.hash);
+  }
+</script>
+<p>Nothing here. The autolivery demo is at <a href="/autolivery/">mishan.github.io/autolivery</a>.</p>
